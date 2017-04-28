@@ -1,0 +1,40 @@
+{
+  "use": "vue",
+  "publicPath": "/",
+  "extraBabelPlugins": [
+    "transform-vue-jsx",
+    "transform-object-rest-spread"
+  ],
+  "disableCSSModules": false,
+  "autoprefixer": null,
+  "externals": [],
+  "multipage": true,
+  "define": null,
+  "proxy": {
+    "/api": {
+      "target": "http://jsonplaceholder.typicode.com/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  },
+  "env": {
+    "development": {
+      "cssSourceMap": false
+    },
+    "production": {
+      "cssSourceMap": true,
+      "analyze": true,
+      "dllPlugin": {
+        "name": "bees",
+        "include": [
+          "style-loader!css-loader!mocha-css",
+          "vue/dist/vue.js",
+          "core-js/library",
+          "url",
+          "vue-style-loader/lib/addStylesClient.js",
+          "style-loader/addStyles.js"
+        ]
+      }
+    }
+  }
+}
