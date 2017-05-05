@@ -1,6 +1,7 @@
 {
   "name": "bee-vue-demo",
-  "version": "0.6.4",
+  "version": "0.6.7",
+  "author": "moocss <moocss@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "bees server",
@@ -13,14 +14,14 @@
     "vue-router": "^2.3.1"
   },
   "devDependencies": {
-    "bees-cli": "0.6.4",
+    "babel-helper-vue-jsx-merge-props": "^2.0.2",
+    "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-vue-jsx": "^3.4.2",
-    "babel-eslint": "^7.2.1",
-    "eslint": "^3.12.2",
-    "eslint-config-airbnb-base": "^11.1.3",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-html": "^2.0.0",
-    "eslint-import-resolver-webpack": "^0.8.1",
-    "mockjs": "^1.0.1-beta3"
+    "mockjs": "^1.0.1-beta3",
+    "node-sass": "^4.5.2",
+    "qs": "6.4.0",
+    "sass-loader": "^6.0.3",
+    "vue-hot-reload-api": "^2.1.0",
+    "webpack": "^2.5.0"
   }
 }

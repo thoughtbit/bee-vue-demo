@@ -1,9 +1,9 @@
 {
   "use": "vue",
+  "style": ["css", "scss"],
   "publicPath": "/",
   "extraBabelPlugins": [
-    "transform-vue-jsx",
-    "transform-object-rest-spread"
+    "transform-vue-jsx"
   ],
   "disableCSSModules": false,
   "autoprefixer": null,
