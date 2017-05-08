@@ -11,5 +11,5 @@ new Vue({
   el: '#root',
   router,
   template: '<App/>',
-  components: { App },
+  components: { App }
 });

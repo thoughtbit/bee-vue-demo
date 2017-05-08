@@ -6,18 +6,19 @@
 </template>
 
 <script>
-import './container/index.scss'
+import '~/container/index.less';
+
 export default {
-  name: 'app',
+  name: 'app'
 };
 </script>
 
-<style lang="scss">
-// @import "./container/index.scss";
-$color-text: #2c3e50;
+<style lang="less">
+// @import "./container/index.less";
+@color-text: #2c3e50;
 #app {
   text-align: center;
-  color: $color-text;
+  color: @color-text;
   margin-top: 60px;
 }
 </style>

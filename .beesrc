@@ -1,11 +1,12 @@
 {
   "use": "vue",
-  "style": ["css", "scss"],
+  "style": ["css", "less"],
   "publicPath": "/",
   "extraBabelPlugins": [
     "transform-vue-jsx"
   ],
   "disableCSSModules": false,
+  "imgCompress": true,
   "autoprefixer": null,
   "externals": [],
   "multipage": true,
@@ -23,18 +24,16 @@
     },
     "production": {
       "cssSourceMap": true,
-      "analyze": true,
-      "dllPlugin": {
-        "name": "bees",
-        "include": [
-          "style-loader!css-loader!mocha-css",
-          "vue/dist/vue.js",
-          "core-js/library",
-          "url",
-          "vue-style-loader/lib/addStylesClient.js",
-          "style-loader/addStyles.js"
-        ]
-      }
+      "analyze": true
     }
+  },
+  "dllPlugin": {
+    "name": "bees",
+    "exclude": [
+      "babel-runtime"
+    ],
+    "include": [
+      "vue/dist/vue.js"
+    ]
   }
 }
