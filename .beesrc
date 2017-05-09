@@ -9,7 +9,7 @@
   "imgCompress": true,
   "autoprefixer": null,
   "externals": [],
-  "multipage": true,
+  "multipage": false,
   "define": null,
   "proxy": {
     "/api": {
