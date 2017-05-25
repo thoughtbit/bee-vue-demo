@@ -18,6 +18,7 @@
       "pathRewrite": { "^/api" : "" }
     }
   },
+  "sw": true,
   "env": {
     "development": {
       "cssSourceMap": false
@@ -26,14 +27,5 @@
       "cssSourceMap": true,
       "analyze": true
     }
-  },
-  "dllPlugin": {
-    "name": "bees",
-    "exclude": [
-      "babel-runtime"
-    ],
-    "include": [
-      "vue/dist/vue.js"
-    ]
   }
 }
