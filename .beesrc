@@ -30,10 +30,13 @@
   "dllPlugin": {
     "name": "bees",
     "exclude": [
-      "babel-runtime"
+      "babel-runtime",
+      "vue",
+      "vue-router"
     ],
     "include": [
-      "vue/dist/vue.js"
+      "vue/dist/vue.js",
+      "vue-router/dist/vue-router.js"
     ]
   }
 }
