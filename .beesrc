@@ -18,6 +18,7 @@
       "pathRewrite": { "^/api" : "" }
     }
   },
+  "sw": true,
   "env": {
     "development": {
       "cssSourceMap": false
